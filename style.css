@@ -1,5 +1,5 @@
 :root{
-    
+   
 }
 body , html {
     font-family:sans-serif ;
@@ -14,8 +14,8 @@ body {
 
 /* ---------------- header style ------------------ */
 .nav1 {
-    display: grid;
-    grid-template-columns: 10% 80%;
+    display: flex;
+   flex-direction: row;
     background: var(--nav-color);
     width: 100%;
     height: 2rem;
@@ -24,6 +24,12 @@ body {
     margin-top: 10px;
     align-items: center;
    
+
+}
+.se-div{
+width: 70%;
+margin-left: 10%;
+height: 100%;
 
 }
 .box{
@@ -37,6 +43,22 @@ background-color:gray;
 border-radius: 50%;
 width: 2em;
 height: 2em;
+
+
+}
+.box1{
+
+    position: relative;
+    align-items: center;
+    display: flex;
+    margin-left: .2em;
+    margin-right: .2em;
+    background-color:gray;
+    
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin-top: 6em;
 }
 .icon{
     min-width: 1em;
@@ -47,17 +69,25 @@ height: 2em;
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
+   
 	
 }
 .search-nav{
 width: 80%;
 margin-left: 0%;
 margin-right: 10%;
-
+direction: rtl;
     background-color: #e3e5e9;
-    height: 70%;
+    height: 100%;
     border: aliceblue;
     border-radius: 10%;
+    margin-top: 4em;
+
+}
+.logo{
+    width:60%;
+    height: 70%;
+    margin-top: 4em;
 
 }
 
