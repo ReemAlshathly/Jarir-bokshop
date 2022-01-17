@@ -324,12 +324,12 @@ margin-left: 30%;
  }
 @keyframes animate{
 from{
-right:0%;
+left:2%
 
 
 }
 to{
-right:200%;
+left:-100%
 
 
 }}
