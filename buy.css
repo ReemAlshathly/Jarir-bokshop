@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --circle-defualt: rgb(194, 161, 161);
+    --circle-active: green;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    position: relative;
+    height: 10vh;
+    background-color: rgb(252, 247, 246);
+    z-index: -2;
+    margin-left: 20vw;
+}
+
+.container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    position: relative;
+    flex-direction: column;
+   
+}
+.bt-div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 35%;
+}
+.progress::before {
+    content: '';
+    background-color:rgb(252, 247, 246);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 2px;
+    z-index: -1;
+}
+
+
+/* .circle::before {
+    content: '';
+    background-color: turquoise;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+} */
+
+.active{
+    background-color: var(--circle-active) !important;
+    border-color: var(--circle-active) !important;
+    color: white;
+}
+
+.progress {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    /* z-index: ; */
+}
+
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 49, 49);
+}
+
+
+.sli-book{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 14em;
+}
+.bt-book{
+    background-color: rgb(201, 13, 13);
+    color: #fff;
+    width: 20em;
+    border: none;
+    height: 7vh;
+    font-size: 1em;
+    margin: .3em;
+   
+}
+.bt-book2{
+background-color: rgb(201, 13, 13);
+    color: #fff;
+    width: 10em;
+    border: none;
+    height: 7vh;
+    font-size: 1em;
+    margin: 0.3em;
+}
+/* The Modal (background) */
+.modal-basket {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+   /* z-index: 1; /* Sit on top */
+    margin-left: 20%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(252, 247, 246);/* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-basket {
+    background-color: rgb(252, 247, 246);
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid rgb(252, 247, 246);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .form>input{
+    width: 15em;
+    height: 4em;
+direction: rtl;
+padding: .5em;
+font-size: 1em;
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .form{
+      align-content: center;
+  }
+  .form1{
+      display: flex;
+      flex-direction: row;
+      margin-left: 20%;
+      margin: 1em;
+  }
+  .first-form{
+    display: flex;
+    flex-direction: row;
+  }

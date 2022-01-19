@@ -123,97 +123,40 @@
    
     
     
-    <section class="show-now">
-        <div>
+    <section class="show-now-detials">
+        <div >
+            
+        </div>
+        <div class="card">
+            <div class="note"> <p>ldf[ewpkdmx saojlgbeoidjksjmxp;l</p></div>
+            <div class="note-option">
+                <input type="submit">dsfjkh</button>
+                <button>dsfjkh</button>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="book-show-head">
+            <div >
+                <div class="book-show">
+                    <img src="img/4.jpg">
+                </div>
+            </div>  
             <div class="deteals-model">
    
             
         
                 <br><br>
-                <img class="show-btn-im" src="./img/4.jpg" width="50px" height="50px">
-                <img class="show-btn-im" src="./img/5.jpg" width="50px" height="50px">
-                <img class="show-btn-im" src="./img/6.jpg" width="50px" height="50px">
+                <img class="imshow" src="./img/4.jpg" width="50px" height="50px">
+                <img class="imshow" src="./img/5.jpg" width="50px" height="50px">
+                <img class="imshow" src="./img/6.jpg" width="50px" height="50px">
                 <img src="" id="model-img">
        
     </div>
                     </div>
-                    <div>
-                        <img src="./img/b1.PNG" width="100%" height="60%" >
-                        <div class="book-icon"><h3> كتاب الكتروني</h3>
-                            <div class="box" >
-                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                        
-                        
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <h3 class="book-title"> كبرياء وهوى</h3>
-                        <h2 class="salry">17.99 رس</h2>
-                        <div class="show-icon-div">
-                            <div class="box" style="background-color: black;">
-                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                        
-                        
-                                </div>
-                               
-                            </div>
-                            <div class="box-show">
-                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                        
-                        
-                                </div>
-                               
-                            </div>
-                            <div class="box" style="background-color: black;">
-                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                        
-                        
-                                </div>
-                               
-                            </div>
-                        </div>
-                        
-                                </div>
-                                <div>
-                                    <img src="./img/b1.PNG" width="100%" height="60%" >
-                                    <div class="book-icon"><h3> كتاب الكتروني</h3>
-                                        <div class="box" >
-                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                                    
-                                    
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                    <h3 class="book-title"> كبرياء وهوى</h3>
-                                    <h2 class="salry">17.99 رس</h2>
-                                    <div class="show-icon-div">
-                                        <div class="box" style="background-color: black;">
-                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                                    
-                                    
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="box-show">
-                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                                    
-                                    
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="box" style="background-color: black;">
-                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
-                                    
-                                    
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                    
-                                            </div>
-                                                               
+ 
+                                                         
                     
                               
        </section>
@@ -367,5 +310,20 @@
         
 
     <script src='login.js'></script>
+    <script>
+
+const showBtn=document.getElementsByClassName("imshow");
+const model_img=document.getElementById('model-img');
+
+for (let i=0 ; i< showBtn.length ; i++){
+showBtn[i].addEventListener('click', function(){
+var img = showBtn[i].getAttribute('src');
+model_img.setAttribute('src',img);
+
+
+})
+}
+
+    </script>
 </body>
 </html>
