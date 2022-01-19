@@ -6,13 +6,14 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
     <script src='main.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
     ="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
      crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-  <header>
+ <header>
 <div class="nav">
     
    
@@ -34,12 +35,16 @@
                   <a href="#">تتبع الشحنة</a>  
               </div>
               <div class="nav-div">
-                  <a href="#">المفضلة
-                </a>  
+                <a href="#" >المفضلة 
+              </a>  
+            </div>
+              <div class="nav-div">
+                  <a href="#" id ="show-btnn">ادخل لحسابك أو سجل الآن</a>  
               </div>
               <div class="nav-div">
-                  <a href="#">ادخل لحسابك أو سجل الآن</a>  
-              </div>
+                <a href="#" id ="show-btnn"> المفضلة</a>  
+            </div>
+            
            
     </div>
     </div>
@@ -66,13 +71,256 @@
     
 
 </div>
-</header>
+</header> 
 <main>
+    
+    
+    <section class="slider">
+        <div>
+            <div class="z1">
+                <img src="img/3.PNG"> 
+            </div>
+            <div class="z2">
+              <img src="img/3.PNG"  >
+            </div>
+            <div class="z3">
+                <img src="img/3.PNG"> 
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <div class="model-content" id="model-continer">
+        <h2>تسجيل الدخول</h2>
+        <form > 
+        <input type="text" placeholder="البريد الالكتروني">
+        <input type="email" placeholder="كلمة السر">
+        <input type="submit" class="submit" value="تسجيل الدخول">
+        <h3>ليس لديك حساب؟</h3>
+        <input type="submit"  value="إنشاء حساب جديد" id ="signup">
+        </form>
+    </div>
+    <div class="model-content2" id="model-continer2">
+        <h2> انشاء حساب</h2>
+        <form > 
+        <input type="text" placeholder=" رقم الجوال">
+        <input type="submit"  value="ارسال رمز التحقق  ">
+        <input type="email" placeholder=" الاسم الاةل">
+        <input type="email" placeholder="اسم  العائلة">
+        <input type="email" placeholder="البريد  الالكتروني">
+        <input type="email" placeholder="تاكيد البريد الالكتروني">
+        <input type="email" placeholder="كلمة السر">
+        <input type="submit" class="submit" value="انشاء حساب " >
+        <h3>هل لديك حساب؟</h3>
+        </form>
+    </div>
    
-    <br> <br> <br> <br>
-    <section></section>
+    <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br><br><br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br><br>
+    
+    <section class="show-now">
+        <div>
+            <img src="./img/b1.PNG" width="100%" height="60%" >
+            <div class="book-icon"><h3> كتاب الكتروني</h3>
+                <div class="box" >
+                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+            
+            
+                    </div>
+                   
+                </div>
+            </div>
+            <h3 class="book-title"> كبرياء وهوى</h3>
+            <h2 class="salry">17.99 رس</h2>
+            <div class="show-icon-div">
+                <div class="box" style="background-color: black;">
+                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+            
+            
+                    </div>
+                   
+                </div>
+                <div class="box-show">
+                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+            
+            
+                    </div>
+                   
+                </div>
+                <div class="box" style="background-color: black;">
+                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+            
+            
+                    </div>
+                   
+                </div>
+            </div>
+           <div class="timer">
+
+            
+                <div id="days"></div>
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+            
+           </div>
+                    </div>
+                    <div>
+                        <img src="./img/b1.PNG" width="100%" height="60%" >
+                        <div class="book-icon"><h3> كتاب الكتروني</h3>
+                            <div class="box" >
+                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                        
+                        
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <h3 class="book-title"> كبرياء وهوى</h3>
+                        <h2 class="salry">17.99 رس</h2>
+                        <div class="show-icon-div">
+                            <div class="box" style="background-color: black;">
+                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                        
+                        
+                                </div>
+                               
+                            </div>
+                            <div class="box-show">
+                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                        
+                        
+                                </div>
+                               
+                            </div>
+                            <div class="box" style="background-color: black;">
+                                <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                        
+                        
+                                </div>
+                               
+                            </div>
+                        </div>
+                        
+                                </div>
+                                <div>
+                                    <img src="./img/b1.PNG" width="100%" height="60%" >
+                                    <div class="book-icon"><h3> كتاب الكتروني</h3>
+                                        <div class="box" >
+                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                    
+                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <h3 class="book-title"> كبرياء وهوى</h3>
+                                    <h2 class="salry">17.99 رس</h2>
+                                    <div class="show-icon-div">
+                                        <div class="box" style="background-color: black;">
+                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                    
+                                    
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="box-show">
+                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                    
+                                    
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="box" style="background-color: black;">
+                                            <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                    
+                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                            </div>
+                                            <div>
+                                                <img src="./img/b1.PNG" width="100%" height="60%" >
+                                                <div class="book-icon"><h3> كتاب الكتروني</h3>
+                                                    <div class="box" >
+                                                        <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                
+                                                
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                <h3 class="book-title"> كبرياء وهوى</h3>
+                                                <h2 class="salry">17.99 رس</h2>
+                                                <div class="show-icon-div">
+                                                    <div class="box" style="background-color: black;">
+                                                        <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                
+                                                
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div class="box-show">
+                                                        <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                
+                                                
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div class="box" style="background-color: black;">
+                                                        <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                
+                                                
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                
+                                                        </div>
+                                                        <div>
+                                                            <img src="./img/b1.PNG" width="100%" height="60%" >
+                                                            <div class="book-icon"><h3> كتاب الكتروني</h3>
+                                                                <div class="box" >
+                                                                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                            
+                                                            
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="book-title"> كبرياء وهوى</h3>
+                                                            <h2 class="salry">17.99 رس</h2>
+                                                            <div class="show-icon-div">
+                                                                <div class="box" style="background-color: black;">
+                                                                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                            
+                                                            
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                <div class="box-show">
+                                                                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                            
+                                                            
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                <div class="box" style="background-color: black;">
+                                                                    <div class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"><a href="#"></a></i>
+                                                            
+                                                            
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                           
+                                                                    </div>                    
+                    
+                              
+       </section>
 </main>
-<aside></aside>
+
     <footer>
        
 <div class="nav">
@@ -220,6 +468,6 @@
     </footer>           
         
 
-    
+    <script src='login.js'></script>
 </body>
 </html>

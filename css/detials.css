@@ -1,0 +1,11 @@
+.deteals-model{
+    background: rgb(248, 243, 243);
+    width: auto;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}

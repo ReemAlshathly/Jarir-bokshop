@@ -4,6 +4,17 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.slider{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+        height: 50vh;
+       margin-bottom: 10em;
+       
+       
+    }
 .model{
     background: rgb(248, 243, 243);
     width: 30vw;
@@ -18,7 +29,7 @@
 }.model-content{
     width: 60%;
     height: 70vh;
-    background-color: seagreen;
+    background-color: rgb(220, 235, 226);
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -68,13 +79,15 @@ box-shadow: rgb(223, 217, 228);
 
 .model-content2{
     width: 60%;
-    height: 70vh;
-    background-color: seagreen;
+    height: auto;
+    background-color: rgb(210, 223, 216);
     align-items: center;
     align-content: center;
     justify-content: center;
     margin-left: 20%;
     position: absolute;
+   visibility: hidden;
+   z-index: 100;
    
 }
 .model-content2 >h2{
@@ -109,3 +122,12 @@ padding: 1em;
 box-shadow: rgb(223, 217, 228);
 
 }
+.model-img{
+    background: rgb(248, 243, 243);
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    margin-left: 4em;
+    top: 0;
+    justify-content: center;
+    align-items: center;}
