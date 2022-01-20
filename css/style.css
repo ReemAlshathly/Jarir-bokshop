@@ -38,8 +38,8 @@ align-items: center;
 display: flex;
 margin-left: .2em;
 margin-right: .2em;
-background-color:gray;
-
+background-color:;
+color: #685d5d;
 border-radius: 50%;
 width: 2em;
 height: 2em;
@@ -69,6 +69,10 @@ height: 2em;
     font-size: 22px;
    
 	
+}
+.icon>a{
+color: #fff;
+
 }
 .search-nav{
 width: 80%;
