@@ -120,8 +120,10 @@ align-items: center;
     padding: 5em;
 }
 .input-basket{
-    width: 30%;
+    width: 20%;
     height: 90%;
+    margin: .5em;
+    margin-right: 0em;
 }
 .price{
     width: 30%;
@@ -186,4 +188,9 @@ align-items: center;
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  .count{
+      display: flex;
+      flex-direction: row;
+      
   }

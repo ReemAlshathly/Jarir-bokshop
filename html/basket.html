@@ -54,8 +54,18 @@
                     <div>
                         <p>3.89</p>
                     </div>
-                    <div>
-                        <input class='input-basket' type="number">
+                    <div class="count">
+                        
+
+                        
+	
+	
+                        
+                        <div class='input-basket' style="border: 1px solid rgb(114, 109, 109); margin-top: 7em; height: 1.8vh; padding: 2em;"> <p  id="demo1"></p></div>
+                            
+
+                        
+                        <input class='input-basket' id="myText1" type="number" onclick="count1()">
                     </div>
                 </div>
 
@@ -72,7 +82,7 @@
         <div class="sec2-basket">
             <div class="sec-row" >
              <div class="sec-row-icon">
-                 <img src="./img/5.jpg" width="30px" height="40px">
+                 <img src="../img/5.jpg" width="30px" height="40px">
   
              </div>
             
@@ -88,9 +98,19 @@
                     <div >
                          <p>3.99</p>
                      </div>
-                     <div>
-                         <input class='input-basket' type="number">
-                     </div>
+                     <div class="count">
+                        
+
+                        
+	
+	
+                        
+                        <div class='input-basket' style="border: 1px solid rgb(114, 109, 109); margin-top: 7em; height: 1.8vh; padding: 2em;"> <p  id="demo"></p></div>
+                            
+
+                        
+                        <input class='input-basket' id="myText" type="number" onclick="count()">
+                    </div>
                  </div>
  
  
@@ -122,9 +142,19 @@
                      <div>
                          <p>3.99</p>
                      </div>
-                     <div>
-                         <input class='input-basket' type="number">
-                     </div>
+                     <div class="count">
+                        
+
+                        
+	
+	
+                        
+                        <div class='input-basket' style=" border: 1px solid rgb(114, 109, 109); margin-top: 7em; height: 1.8vh; padding: 2em;"> <p  id="demo2"></p></div>
+                            
+
+                        
+                        <input class='input-basket' id="myText2" type="number" onclick="count2()">
+                    </div>
                  </div>
  
  
@@ -157,5 +187,21 @@
   
   </div>
   <script src="basket.js"></script>
+  <script>
+	
+	// Here the value is stored in new variable x
+	function count() {
+		var x = document.getElementById("myText").value;
+		document.getElementById("demo").innerHTML = x;
+	}
+    function count1() {
+		var x = document.getElementById("myText1").value;
+		document.getElementById("demo1").innerHTML = x;
+	}
+    function count2() {
+		var x = document.getElementById("myText2").value;
+		document.getElementById("demo2").innerHTML = x;
+	}
+	</script>
 </body>
 </html>
