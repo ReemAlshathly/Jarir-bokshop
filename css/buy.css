@@ -2,24 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 2%;
 }
 
 :root{
     --circle-defualt: rgb(194, 161, 161);
-    --circle-active: green;
+    --circle-active: #71ca71;
 }
 
 .container {
+   
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     position: relative;
-    height: 10vh;
-    background-color: rgb(252, 247, 246);
+    /* height: 10vh; */
+    /* background-color: #333; */
     z-index: -2;
-    margin-left: 20vw;
+    /* margin-left: 20vw;*/
 }
 
 .container-btn {
@@ -29,17 +31,18 @@
     margin-top: 2vh;
     position: relative;
     flex-direction: column;
-   
+    align-content: center;
+    align-items: center;
 }
 .bt-div{
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin-left: 35%;
+   
 }
 .progress::before {
     content: '';
-    background-color:rgb(252, 247, 246);
+    background-color: #333;
     display: flex;
     position: absolute;
     top: 50%;
@@ -82,24 +85,29 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(182, 49, 49);
+    background-color: rgb(249 250 252);
 }
 
 
 .sli-book{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin-left: 14em;
+    border: 1px solid beige;
+    justify-content: center;
+    align-content: center;
+   
 }
 .bt-book{
-    background-color: rgb(201, 13, 13);
+    background-color: rgb(196 37 14);
     color: #fff;
-    width: 20em;
+    width: 30%;
     border: none;
     height: 7vh;
-    font-size: 1em;
-    margin: .3em;
+    /* font-size: 1em; */
+    /* margin: 0.3em; */
+    border-radius: 20%;
+    margin: 2%;
    
 }
 .bt-book2{
@@ -116,18 +124,46 @@ background-color: rgb(201, 13, 13);
     display: none; /* Hidden by default */
     /*position: fixed; /* Stay in place */
    /* z-index: 1; /* Sit on top */
-    margin-left: 20%;
+   margin-right: 40%;
     width: 30%; /* Full width */
     height: 60%; /* Full height */
    /* overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgb(252, 247, 246);/* Black w/ opacity */
+   background-color: #f9fafc;
+   border-radius: 20%;
   }
+  .modal-basket2 {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+    margin-right: 10%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc; 
+   border-radius: 20%; }
+  .modal-basket3 {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+   /* z-index: 1; /* Sit on top */
+   margin-left: 20%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc;
+   border-radius: 20%;}
+  .modal-basket4 {
+    display: none; /* Hidden by default */
+    /*position: fixed; /* Stay in place */
+   /* z-index: 1; /* Sit on top */
+   margin-left: 40%;
+    width: 30%; /* Full width */
+    height: 60%; /* Full height */
+   /* overflow: auto; /* Enable scroll if needed */
+   background-color: #f9fafc;  
+   border-radius: 20%;}
   
   /* Modal Content/Box */
   .modal-content-basket {
-    background-color: rgb(252, 247, 246);
-    margin: 1% auto; /* 15% from the top and centered */
+   background-color: #f9fafc;    margin: 1% auto; /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid rgb(252, 247, 246);
     width: 80%; /* Could be more or less, depending on screen size */
@@ -141,13 +177,16 @@ background-color: rgb(201, 13, 13);
     font-weight: bold;
   }
   .form>input{
-    width: 15em;
-    height: 4em;
+   
+
+width: 100%;
+height: 4em;
 direction: rtl;
-padding: .5em;
-font-size: 1em;
+padding: 5%;
+font-size: 80%;
 
   }
+  
   
   .close:hover,
   .close:focus {
@@ -168,3 +207,34 @@ font-size: 1em;
     display: flex;
     flex-direction: row;
   }
+  .final{
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+  }
+  .final>h1{
+    color: red;
+    direction: rtl;
+    margin:1em;
+    font-size: 1.5em;
+  }
+  .modal-basket5{
+      padding: 1em;
+      display: none; /* Hidden by default */
+      /*position: fixed; /* Stay in place */
+     /* z-index: 1; /* Sit on top */
+     
+      width: 70%; /* Full width */
+      height: 60%; /* Full height */
+     /* overflow: auto; /* Enable scroll if needed */
+     background-color: #f9fafc;
+     border-radius: 20%; }
+      .head-buy{
+          align-content: center;
+          justify-content: center;
+          width: 100%;
+      }
+      .head-buy>h1{
+          color: red;
+         
+      }

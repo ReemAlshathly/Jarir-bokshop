@@ -47,10 +47,10 @@ const countdown=()=>{
     var h=document.getElementById('hours');
     var m=document.getElementById('minutes');
     var s=document.getElementById('seconds');
-    d.innerHTML=remain_days;
-    h.innerHTML=remain_houres;
-    m.innerHTML=remain_minutes;
-    s.innerHTML=remain_second;
+    d.innerHTML=remain_days+"d";
+    h.innerHTML=remain_houres+ "h";
+    m.innerHTML=remain_minutes + "m";
+    s.innerHTML=remain_second+ "s";
 
 }
 setInterval(countdown,1000);

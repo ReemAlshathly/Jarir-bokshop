@@ -1,3 +1,28 @@
+header{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    font-family:sans-serif ;
+}
+.header-sec1{
+    display: flex;
+    flex-direction: row
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(223 217 228);
+    background: #f9fafc;
+    height: 3em;
+    text-decoration: none;
+    
+}
+.nav a{
+    text-decoration: none;
+margin: 2%;
+}
 .deteals-model{
     background: ;
     width: auto;
@@ -29,33 +54,200 @@
     background-color: ;
     display: flex;
     flex-direction: column;
+    margin: 2%;
+    box-shadow: #f9fafc;
+   
+   
+
+}
+.div-note{
+    width: 80%;
+    height: auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
     margin: 4%;
     box-shadow: #f9fafc;
     align-items: center;
     box-shadow: 0 10px 10px #999;
-
 }
 .card{
     padding: 2px;
     display: flex;
     flex-direction: column;
+    
+   padding-right: 2%;
+    
 }
-.note{
 
-    background: wheat;
-    border-left: 1px solid yellow;
-    width: 90%;
-    height: 20%;
-    margin-top: 10%;
+.card-sec1{
+    direction: rtl;
 }
-.note-option{
-padding: 1%;
-    margin: 0%;
+.card a{
+    color: rgb(54, 113, 202);
+    text-decoration: none;
+}
+.card-sec1>h2{
+    color: rgb(201, 13, 13);
+}
+.card>div>sub{
+    color: rgb(182, 179, 179);
+}
+.card-leftsec{
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    color: rgb(153, 153, 155);
+    font-weight: 900;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    width: ;
+}
+.stars>div{
     display: flex;
     flex-direction: row;
 }
-.note-option>input{
+.format{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    margin: 1.5em;
-    height: 40%;
 }
+.format-left{
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+}
+.format-left h2{
+    color: rgb(201, 13, 13);
+
+    
+}
+.format-left>div>sub{
+    color:rgb(161, 161, 161);
+}
+.format-right{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    width: 100%;
+}
+.format-right div{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    margin-top: 10%;
+}
+.format-right label{
+    margin-right: 2%;
+}
+.book-show-head{
+
+    width: 80%;
+    height: auto;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    box-shadow: #f9fafc;
+    align-items: center;
+    box-shadow: 0 10px 10px #999;
+}
+.navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    direction: rtl;
+    padding: 2%;
+    text-decoration: none;
+    right: 0%;
+}
+.navbar a{
+    direction: rtl;
+    padding: 2%;
+    text-decoration: none;
+    color: rgb(54, 113, 202);
+}
+.basket-detials-note{
+    width: 90%;
+    background: rgb(248, 242, 245);
+    height: 20%;
+    border-right:3px solid yellow;
+    padding-right:  2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 4%;
+    font-size: .8em;
+    direction: rtl;
+    
+    margin-top: 5%;
+}
+.basket-detials-note a{
+    text-decoration: none;
+    margin-top: 9px;
+}
+.deatials-basket-btn{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    width: 100%;
+}
+.deatials-basket-btn button{
+    width: 80%;
+    height: 5vh;
+    margin: .5em;
+    align-items: center;
+    background-color: rgb(201, 13, 13);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+}
+.deatials-basket-btn a{
+    text-decoration: none;
+    color: #fff;
+  padding-right: 8%;}
+  .deatials-basket-btn input{
+width: 15%;
+margin-right: 2%;
+height: 5vh;
+margin-top: .5em;
+font-size: 20px;
+  }
+  .more{
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f8f8;
+      width: 90%;
+      direction: rtl;
+  }
+  .more div{
+      display: flex;
+      flex-direction: row;
+      margin-top: 3%;
+      margin-right: 2%;
+  }
+  .more p{
+     
+  }
+  .share{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+     align-items: center;
+     border-top: 1px solid #5a5959;
+      justify-content: center;
+      width: 90%;
+  }
+  .share div{
+    display: flex;
+    flex-direction: row;
+    margin: 4%;
+    width: 40%;
+    padding: 2%;
+  }
+.share >div{
+    box-shadow: 1px 1px 9px 1px rgb(201, 196, 196);
+} 

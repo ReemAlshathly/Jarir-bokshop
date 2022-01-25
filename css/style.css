@@ -149,10 +149,19 @@ margin-right: 10%;
     width: 50%;
 }
 .nav-div{
-    border:1px solid #000;
-    background: #e3e5e9;
+   
+    border: 1px solid rgb(223 217 228);
+    background: #f9fafc;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+   
+    display: flex;
+    flex-direction: row;
 }
-
+.nav-div>div{
+margin-left: 1em;
+}
 .wrapper > div >a {
     text-decoration: none;
     color:  var(--text-color);
@@ -160,83 +169,70 @@ margin-right: 10%;
 }
 
 
-.earch-div{
-    background-color: #f9fafc;
-    width: 100%;
-    height: 20%;
-}
-
-.foter-content{
+.sec-header {
     display: flex;
-    flex-direction: row;
-     background-color: #333333;
-    color: honeydew;
-    
-}
-.bor{
-    border-bottom: 1px solid #fff ; 
-    border-top: 1px solid #fff;
-    margin: 1em;
-}
-
-.foter-content > div> p{
+    justify-content: flex-start;
     align-items: center;
-}
-.foter-content > div {
-   
-   
-    width: 50%;
-}
-
-
-.foter-content > div >a {
-    text-decoration: none;
-    color:  var(--text-color);
-    padding: 0px;
-}
-footer{
-    margin-top: 30em;
-}
-.footer-section2{
-
-    width: 100%;
-     height: 90%; 
-     margin-top: 22%;
-      background-color: #e6e6e6;
-      display: flex;
-      flex-direction: columns;
-      
-
-}
-.fo-box{
-    background-color: #e6e6e6;
-     width:; 
-     height: 40%;
-     margin-left:1em ;
-     margin-right: 15em;
-     margin-top: 3em;
-
-}
-.p-foter{
-    width: 150%;
-}
-.form-fo{
-    display: flex;
-    flex-direction: column;
-    background-color: #484848;
+    padding: 5px;
+    width: 90vw;
+    margin-left: 5%;
     margin-top: 1em;
 }
-.fo-input{
-
-    margin-top: 7em;
+.head-cart {
+    border-radius: 50%;
+    background-color: #eff2f7;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
 }
-.soial{
-display: flex;
-flex-direction: row;
-margin-bottom: 1em;
-margin-left:1.5em ;
-
+.search {
+    display: flex;
+    justify-content: center;
 }
+.search form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    direction: rtl;
+}
+.search-head {
+    width: 60vw;
+    border-radius: 20px;
+    padding: 15px;
+    border-color: transparent;
+    background-color: #eff2f7;
+    color: #333;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 16px 0 32px;
+}
+.search form button {
+    width: 50px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+    padding: 14px 20px;
+}
+
+.logo-im {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
 
 .slider{
     margin-top: 5em;
@@ -364,7 +360,7 @@ height: auto;
 background-color: ;
 display: flex;
 flex-direction: column;
-margin: 4%;
+margin:2px;
 
 box-shadow: #f9fafc;
 
@@ -388,12 +384,13 @@ box-shadow: 0 10px 10px #999;
     display: flex;
     flex-direction: row;
 }
-.book-icon>h3{
+.book-icon>a{
     color: #685d5d;
+    margin-right: .2em;
 }
 .book-title{
 
-    font-size: .9em;
+    font-size: 1em;
     color: #a59d9d;
 }
 .salry{
@@ -413,10 +410,24 @@ border-radius: 50%;
 width: 2em;
 height: 2em;
 }
+.mainOffer-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    direction: rtl;
+}
 .timer{
     display: flex;
     flex-direction: row;
     color: rgb(189, 8, 8);
+    border: 1px solid rgb(174, 216, 174);
+    box-shadow: 0 4px 5px rgb(174, 216, 174);
+    padding: 2px;
+    border-radius: 20%;
+    margin-top: 4px;
+    margin-bottom: 4px;
 
 }
 
@@ -537,4 +548,17 @@ box-shadow: rgb(223, 217, 228);
 .book-show-head{
     width: 80%;
 margin-left: 3em;
+}
+.bask{
+    display: flex;
+    flex-direction: column;
+}
+.bask >input{
+width: 2%;
+background: red;
+border-radius: 50%;
+margin-bottom: 1.5em;
+position: absolute;
+color: #fff;
+border: 1px solid red;
 }

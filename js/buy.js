@@ -14,6 +14,8 @@ nextBTN.addEventListener("click", function(){
     nextBTN.style.display="none"
    prevBTN.style.display="none"
     modal.style.display = "block";
+    modal5.style.display="none";
+
     changeStatus();
 });
 
@@ -57,7 +59,8 @@ nextBTN2.addEventListener("click", function(){
     modal2.style.display="block"
     modal.style.display = "none";
     prevBTN.style.display="none"
-    nextBTN.style.display="none"
+    nextBTN.style.display="none";
+    modal5.style.display="none";
     changeStatus2();
 });
 
@@ -70,6 +73,7 @@ prevBTN2.addEventListener("click", function(){
     prevBTN.style.display="block"
     modal2.style.display = "none";
     modal.style.display = "none";
+    modal5.style.display="none";
     changeStatus();
 });
 
@@ -102,6 +106,7 @@ nextBTN3.addEventListener("click", function(){
     modal3.style.display="block"
     modal2.style.display = "none";
     modal.style.display = "none";
+    modal5.style.display="none";
     changeStatus3();
 });
 
@@ -115,6 +120,7 @@ prevBTN3.addEventListener("click", function(){
     prevBTN.style.display="none"
     modal2.style.display = "none";
     modal.style.display = "block";
+    modal5.style.display="none";
     changeStatus3();
 });
 
@@ -149,6 +155,7 @@ nextBTN4.addEventListener("click", function(){
     modal2.style.display = "none";
     modal.style.display = "none";
     modal3.style.display = "none";
+    modal5.style.display="none";
     changeStatus3();
 });
 
@@ -161,6 +168,7 @@ prevBTN4.addEventListener("click", function(){
     modal2.style.display = "block";
     modal3.style.display = "none";
     modal.style.display = "none";
+    modal5.style.display="none";
     changeStatus3();
 });
 
@@ -183,7 +191,7 @@ const nextBTN5 = document.getElementById('next-btn5');
 const prevBTN5 = document.getElementById('prev-btn5');
 
 var btn5 = document.getElementById("next-btn4");
-
+var modal5 = document.getElementById("myModal5");
 
 
 nextBTN5.addEventListener("click", function(){
@@ -195,6 +203,7 @@ nextBTN5.addEventListener("click", function(){
     modal2.style.display = "none";
     modal.style.display = "none";
     modal3.style.display = "none";
+    modal5.style.display="block";
     changeStatus3();
 });
 
