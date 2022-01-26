@@ -5,11 +5,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link  id="lang"rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/slider.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/basket.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/detials.css'>
+    
+   
 
     <script src='main.js'></script>
     <script src='../js/slider.js'></script>
@@ -141,12 +140,30 @@
                 </svg>
               </div>
         </div>
+        <div class="nav">
+          <a   onclick="togglestyle()"  id="en" style="display: block;">English </a> 
+          <a   onclick="togglestyle()"  id="ar" style="display: none;"> العربية </a>  
+          <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M14 6l-4.22 5.63 1.25 1.67L14 9.33 19 16h-8.46l-4.01-5.37L1 18h22L14 6zM5 16l1.52-2.03L8.04 16H5z"
+                />
+              </svg>
+            </div>
+      </div>
     </div>
     <!--second header-->
-    <div class="sec-header" style="direction: ltr;">
+    <div class="sec-header" style="">
         <div style="display: flex; width: 80vw">
             <div class="bask">
-                <input  id="demo1">
+                <input  id="result">
           <a href="../html/basket.html" class="head-cart">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -227,47 +244,207 @@
         </div></section>
     
     <section>
-        <br><br><br><br><br><br>
+        <br>
         <!-- Slideshow container -->
-<div class="slideshow-container">
+        <div class="container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="../img/4.jpg" style="width:100% ;height: 40vh;">
-     
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="../img/5.jpg" style="width:100%; height: 40vh;">
+   
+          <div class="Slides">
+            <img class="im-slider" src="../img/4.jpg" width="20%" height="10%">
+            <div class="text">Caption Text</div>
+          </div>
+        
+          <div class="Slides">
+              <img class="im-slider" src="../img/5.jpg" width="20%" height="10%">
+              <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="Slides">
+              <img  class="im-slider" src="../img/6.jpg"  width="20%" height="10%">
+              <div class="text">Caption Text</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         
+        </div>
+        
+        <div style="text-align:center">
+          <span class="dot" ></span>
+          <span class="dot" ></span>
+          <span class="dot" ></span>
+        </div>
+       
+          <script>
+      var slideIndex=0;
+      showSlides();
       
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="../img/6.jpg" style="width:100% ; height: 40vh;">
-     
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("Slides");
+        var dots = document.getElementsByClassName("dot");
+       
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+      
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides,1000);
+      }
+          </script>
   <br>
   
   <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+ 
     </section>
 
     <br>
     
    
     <br> <br> 
+    <div style="direction: rtl;margin-right: 3%;"> <h2>تصفح حسب القسم</h2></div>
+    <section class="first-section">
+     
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(156, 63, 9)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(156, 63, 9);">دين</h2>
+      </div>
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(238, 152, 120)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(238, 152, 120);"> تاريخ</h2>
+      </div>
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(147, 86, 204)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(147, 86, 204);">روايات</h2>
+      </div>
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(243, 130, 200)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(243, 130, 200);">سياسة</h2>
+      </div>
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(82, 223, 180)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(82, 223, 180);">اقتصاد</h2>
+      </div>
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(241, 50, 50)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(241, 50, 50);">طبخ</h2>
+      </div>
+      <div >
+        <div class="bask">
+         
+    <a href="../html/basket.html" class="head-cart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 0 24 24"
+        width="24px"
+        fill="rgb(18, 99, 126)"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+        />
+      </svg>
+    </a></div>
+    <h2 style="color: rgb(18, 99, 126);">تربية</h2>
+      </div>
+    </section>
     
     <section class="show-now" id="list">
         <h2> العروض الحالية </h2>
@@ -351,7 +528,7 @@
                     />
                   </svg>
                 </a>
-                <a  id="myText1"  onclick="count1()">
+                <a    onclick="clickCounter()">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -4952,5 +5129,7 @@
             }
         }
             </script>
+             <script src='../js/language.js'></script>
+             <script src='../js/count.js'></script>
 </body>
 </html>

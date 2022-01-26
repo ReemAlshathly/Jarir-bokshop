@@ -3,7 +3,6 @@
 }
 body , html {
     font-family:sans-serif ;
-    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -17,7 +16,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    direction: rtl;
+    direction: ltr;
     font-family: sans-serif;
 }
 .header-sec1 {
@@ -108,7 +107,7 @@ color: #fff;
 width: 80%;
 margin-left: 0%;
 margin-right: 10%;
-direction: rtl;
+direction: ltr;
     background-color: #e3e5e9;
     height: 100%;
     border: aliceblue;
@@ -194,7 +193,7 @@ margin-left: 1em;
     width: 90vw;
     margin-left: 5%;
     margin-top: 1em;
-    direction: ltr;
+    direction: rtl;
 }
 .head-cart {
     border-radius: 50%;
@@ -214,7 +213,7 @@ margin-left: 1em;
     display: flex;
     align-items: center;
     position: relative;
-    direction: rtl;
+    direction: ltr;
 }
 .search-head {
     width: 60vw;
