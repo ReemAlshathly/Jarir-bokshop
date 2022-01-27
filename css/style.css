@@ -792,6 +792,23 @@ text-align: center;
     color: rgb(102, 100, 100);
     text-align: center;
 }
+.images{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 3%;
+    align-content: center;
+    align-items: center;
+}
+.images>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+    margin-top: 2%;
+
+}
 @media (max-width: 500px){
     .main{
         display: flex;
