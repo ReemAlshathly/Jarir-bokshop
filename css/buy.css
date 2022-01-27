@@ -77,6 +77,14 @@
     /* background-color: brown; */
     /* z-index: ; */
 }
+.progress1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    /* z-index: ; */
+}
 
 .circle {
     border-radius: 50%;
@@ -101,15 +109,16 @@
 .bt-book{
     background-color: rgb(196 37 14);
     color: #fff;
-    width: 30%;
+    width: 10vw;
     border: none;
     height: 7vh;
     /* font-size: 1em; */
     /* margin: 0.3em; */
-    border-radius: 20%;
+    border-radius: 10%;
     margin: 2%;
-   
 }
+   
+
 .bt-book2{
 background-color: rgb(201, 13, 13);
     color: #fff;
@@ -236,5 +245,5 @@ font-size: 80%;
       }
       .head-buy>h1{
           color: red;
-         
+         text-align: center;
       }
