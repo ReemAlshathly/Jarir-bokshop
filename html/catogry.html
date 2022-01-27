@@ -182,8 +182,7 @@
           <div class="search">
             <form>
                
-              <input  class="search-head" onkeyup="search_animal()" type="text"
-              name="search" id="searchbar"/>
+              <input  class="search-head" />
               <button type="submit">
                 <span class="material-icons-outlined">
                   <svg
@@ -263,17 +262,17 @@
 
    
           <div class="Slides">
-            <img class="im-slider" src="../img/4.jpg" width="20%" height="10%">
+            <img class="im-slider" src="../img/show1.jpg" width="20%" height="10%">
             <div class="text">Caption Text</div>
           </div>
         
           <div class="Slides">
-              <img class="im-slider" src="../img/5.jpg" width="20%" height="10%">
+              <img class="im-slider" src="../img/show2.jpg" width="20%" height="10%">
               <div class="text">Caption Text</div>
             </div>
         
             <div class="Slides">
-              <img  class="im-slider" src="../img/6.jpg"  width="20%" height="10%">
+              <img  class="im-slider" src="../img/show3.jpg"  width="20%" height="10%">
               <div class="text">Caption Text</div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -353,7 +352,8 @@
         </div>
         <div class="left">
             <div class="order">
-               <input type="search" placeholder="الرجاء الاختيار ">
+               <input type="text"  placeholder="الرجاء الاختيار " class="search-head" onkeyup="search_animal()" 
+               name="search" id="searchbar">
             </div>
             <section class="show-now1" id="list">
                 <div class="books">
