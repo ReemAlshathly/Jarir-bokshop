@@ -7,7 +7,7 @@
 
 :root{
     --circle-defualt: rgb(194, 161, 161);
-    --circle-active: #71ca71;
+    --circle-active: rgb(196 37 14);
 }
 
 .container {
